@@ -41,7 +41,7 @@ const useWeather = () => {
       const updateWeatherData = {
         ...weatherData,
         location: data.name,
-        climate: data.weather[0].name,
+        climate: data.weather[0].main,
         temprature: data.main.temp,
         maxTemprature: data.main.temp_max,
         minTemprature: data.main.temp_min,
